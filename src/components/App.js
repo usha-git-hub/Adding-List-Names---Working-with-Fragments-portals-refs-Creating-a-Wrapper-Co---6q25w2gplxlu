@@ -3,7 +3,7 @@ import '../styles/App.css';
 import List from "./List";
 const App = () => {
   //code here
-   const [name, setname] = useState("");
+  const [name, setname] = useState("");
   const[list, setlist] = useState([]);
 
   const handleChange =(e) => {
@@ -16,10 +16,12 @@ const App = () => {
     setlist([...list, name])
 
   }
+
+  
   return (
     <div id="main">
-       <input id="input" onChange={} />
-      <button id="button" onClick={}>Click</button>
+       <input id="input" onChange={handleChange} />
+      <button id="button" value = {name} onClick={handleOnClick}>Click</button>
        <ul id="list">
       <List listx={list} />
       </ul>
@@ -29,3 +31,5 @@ const App = () => {
 
 
 export default App;
+
+
