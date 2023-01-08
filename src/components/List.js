@@ -4,7 +4,7 @@ import ListItems from './ListItems';
  const List = ({listx}) =>{
   return(
     
-   <>
+    <>
       <ul id='list'>
         {listx.map((list  => <ListItems valuex ={list}/>))}
       </ul>
@@ -15,3 +15,5 @@ import ListItems from './ListItems';
 }
 
 export default List;
+
+
